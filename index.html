@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Explore Capitals — Quick Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Explore Capitals</h1>
+      <p class="hint">Click the correct capital. 10-question round. Timer per question.</p>
+    </header>
+
+    <section id="game" class="card">
+      <div id="hud">
+        <div>Score: <span id="score">0</span></div>
+        <div>Question: <span id="qnum">0</span>/10</div>
+        <div>Time: <span id="timer">15</span>s</div>
+      </div>
+
+      <div id="prompt" class="prompt">Loading…</div>
+
+      <div id="choices" class="choices"></div>
+
+      <div class="controls">
+        <button id="startBtn">Start Game</button>
+        <button id="redoBtn" hidden>Play Again</button>
+      </div>
+    </section>
+
+    <footer class="foot">Static demo ready for GitHub Pages or Netlify.</footer>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
